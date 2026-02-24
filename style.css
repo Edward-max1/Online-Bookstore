@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body {
+    background-color: #d7d8da;
+    color: #333;
+}
+
+.content{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding :10px;
+}
+
+header{
+    background-color: #228afa;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+
+
+.navigation{
+    background-color: #959393;
+}
+
+.navigation ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.navigation ul li{
+    margin:5px 15px;
+}
+
+.navigation ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 8px 12px;
+    transition: background-color 0.3s ease;
+}
+.navigation a:hover {
+    background-color: #228afa;
+    border-radius: 4px;
+    box-shadow: 0 2px 6px white;
+}
+
+.section{
+    display: flex;
+    flex-wrap:wrap ;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.section div{
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    width: 280px;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.section div:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+}
+
+.section button{
+    margin-top: 10px;
+    padding: 8px 12px;
+    border: none;
+    color: white;
+    background-color: #228afa;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+.section button:hover{
+    background-color: #2971be;
+}
+
+@media (max-width: 600px) {
+    .navigation ul{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section div{
+        width: 90%;
+    }
+}
