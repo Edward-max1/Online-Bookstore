@@ -16,6 +16,9 @@ body {
 }
 
 header{
+    position: sticky;
+    top: 0;
+    z-index: 1001;
     background-color: #228afa;
     color: white;
     padding: 20px;
@@ -60,6 +63,10 @@ header{
     padding: 20px 0;
 }
 
+.split{
+    width: 70%;
+}
+
 .section div{
     background-color: white;
     border: 1px solid #ddd;
@@ -100,9 +107,9 @@ header{
 
 .cart-sidebar{
     position: fixed;
-    top: 0;
+    top: 87px;
     right: 0;
-    width: 300px;
+    width: 30%;
     height: 100%;
     background-color: white;
     border-left: 1.5px solid #ccc;
@@ -114,11 +121,14 @@ header{
     z-index: 1000;
 }
 
-.cart-sidebar .show{
+.show{
     transform: translateX(0);
 }
 
 .cart-sidebar h3{
+    text-align: center;
+    color: #228afa;
+    font-size: 1.5rem;
     margin-bottom: 15px;
 }
 
@@ -145,7 +155,6 @@ header{
     width: 100%;
     font-weight: bold;
     border-radius: 10px;
-    font-size: 1.0005rem;
 }
 
 #checkout-btn:hover{
