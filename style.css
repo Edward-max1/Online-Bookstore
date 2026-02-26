@@ -28,6 +28,8 @@ header{
 
 
 .navigation{
+    position: sticky;
+    top: 70px;
     background-color: #959393;
 }
 
